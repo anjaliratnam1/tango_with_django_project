@@ -12,6 +12,7 @@
                 <h1>{{ category.name }}</h1>
                 {% if pages %}
                 <ul>
+                    <a href="/rango">Index</a><br /> <br />
                     {% for page in pages %}
                     <li><a href="{{ page.url }}">{{ page.title }}</a></li>
                     {% endfor %}

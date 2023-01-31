@@ -1,6 +1,6 @@
 {% extends 'rango/base.html' %}
 
-{% load staticfiles %} <!-- New line-->
+{% load staticfiles %} 
 
 {% block title_block %}
     About Rango
@@ -9,9 +9,10 @@
 {% block body_block %}
     <h1>Rango says...</h1>
         here is the about page. <br />
-        This tutorial has been put together by Anjali Ratnam
+        This tutorial has been put together by Anjali Ratnam <br />
+        Visits: {{ visits }}
     <ul>
         <img src="{{ MEDIA_URL }}cat.jpg" alt="Picture of a Cat." /> <br />
-        <img src="{% static 'images/rango.jpg' %}" alt="Picture of Rango" /> <!-- New line --> <br />
+        <img src="{% static 'images/rango.jpg' %}" alt="Picture of Rango" />  <br />
             
 {% endblock %}

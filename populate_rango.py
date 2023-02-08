@@ -20,7 +20,7 @@ def populate():
 
     django_pages = [
         {'title': 'Official Django Tutorial',
-         'url':'http://docs.djangoproject.com/en/2.1/intro/tutorial01/',
+         'url':'https://docs.djangoproject.com/en/2.1/intro/tutorial01/',
          'views': '12'},
         {'title':'Django Rocks',
          'url':'http://www.djangorocks.com/',
@@ -53,7 +53,7 @@ def populate():
             print(f'- {c}: {p}')
 
 
-def add_page(cat, title, url, views=0):
+def add_page(cat, title, url, views):
     p = Page.objects.get_or_create(category=cat, title=title)[0]
     p.url=url
     p.views=views
